@@ -1,5 +1,5 @@
 {
-  "name": "react-default",
+  "name": "goit-react-hw-02-phonebook",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -7,12 +7,14 @@
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "gh-pages": "^3.2.3",
+    "lodash.debounce": "^4.0.8",
     "modern-normalize": "^1.1.0",
     "node-sass": "^6.0.1",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
+    "shortid": "^2.2.16",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
@@ -26,13 +28,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nelli-belovol/react-default.git"
+    "url": "git+https://github.com/nelli-belovol/goit-react-hw-02-phonebook.git"
   },
   "author": "Nelli Belovol <nelli199020@gmail.com>",
   "bugs": {
-    "url": "https://github.com/nelli-belovol/react-default/issues"
+    "url": "https://github.com/nelli-belovol/goit-react-hw-02-phonebook/issues"
   },
-  "homepage": "https://nelli-belovol.github.io/react-default",
+  "homepage": "https://nelli-belovol.github.io/goit-react-hw-02-phonebook",
   "eslintConfig": {
     "extends": [
       "react-app",
