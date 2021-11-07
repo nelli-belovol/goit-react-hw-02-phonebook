@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import s from './Contacts.module.scss';
+import s from './ContactsForm.module.scss';
 
 export default class ContactsForm extends Component {
   state = {

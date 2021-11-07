@@ -3,9 +3,9 @@ import React, { Component } from 'react';
 import shortid from 'shortid';
 // import debounce from 'lodash.debounce';
 
-import ContactsForm from 'Components/ContactsForm';
-import ContactsList from 'Components/ContactList';
-import Filter from 'Components/Filter.jsx';
+import ContactsForm from 'Components/ContactsForm/ContactsForm';
+import ContactsList from 'Components/ContactList/ContactList';
+import Filter from 'Components/Filter/Filter.jsx';
 
 class App extends Component {
   state = {
@@ -22,7 +22,7 @@ class App extends Component {
     this.setState({ filter: e.currentTarget.value });
   };
 
-  findContact = () => {
+  filterContact = () => {
     const normalizeFilter = this.state.filter.toLowerCase();
     const filterContacts = this.state.contacts.filter(contact =>
       contact.name.toLowerCase().includes(normalizeFilter),
@@ -80,7 +80,7 @@ class App extends Component {
         />
         <ContactsList
           onClick={this.handleDelContact}
-          contacts={this.findContact()}
+          contacts={this.filterContact()}
         />
       </div>
     );
